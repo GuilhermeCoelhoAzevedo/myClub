@@ -1,0 +1,1 @@
+https://djangobook.com/mastering-django-2-book/

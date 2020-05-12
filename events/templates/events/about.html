@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}About myClub {% endblock %}
+
+{% block content %}
+
+<h1>History</h1>
+
+<p>
+    The myClub was founded in 1910 to help the soccer players in the city of São Paulo to keep playing. It was created
+    by Guilherme Coelho de Azevedo, a lover of the sport. Since then, myClub have been receiving many players from different
+    parts of the world.
+</p>
+
+<img src="{% static 'oldMyClub.jpg' %}" style="width:560px;height:340px;" alt=""/>
+
+<p>
+    In 2014, myClub received the Brazil national football team for the world cup.
+</p>
+
+<img src="{% static 'BrazilTeam.jpeg' %}" style="width:560px;height:340px;" alt=""/>
+
+<p>
+    Nowadays myClub has a huge structure with 10 soccer fields, gym and swimming pool.
+</p>
+
+<img src="{% static 'structure.jpg' %}" style="width:560px;height:340px;" alt=""/>
+
+{% endblock content %}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}myClub{% endblock title %}
+
+{% block content %}
+<h1>myClub Calendar</h1>
+
+<div class="month">
+    <ul>
+        <a href="{% url 'index' year=prev_year month=prev_month %}"><li class="prev">&#10094;</li></a>
+        <a href="{% url 'index' year=next_year month=next_month %}"><li class="next">&#10095;</li></a>
+        <li><b>{{ month_name }}<span style="font-size:18px"> {{ year }}</span></b></li>
+    </ul>
+    <p>{% autoescape off %}{{ cal }}{% endautoescape %}</p>
+</div>
+
+{% include "events/announcements.html" %}
+
+{% endblock content %}
